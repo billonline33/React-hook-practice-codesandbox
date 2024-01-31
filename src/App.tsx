@@ -3,7 +3,7 @@ import "./styles.css";
 import useLocalStorageHook from "./useLocalStorage";
 
 export default function App() {
-  const [name, setName] = useLocalStorageHook("name");
+  const [name, setName] = useLocalStorageHook("name",null);
   const onChangeVal1 = (e: any) => {
     setName(e.target.value);
   };
